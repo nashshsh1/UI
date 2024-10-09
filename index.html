@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Reminder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <nav>
+            <a href="#">About us</a>
+            <a href="#">Features</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <h1>EVENT REMINDER</h1>
+            <p>Set your day with us!</p>
+        </div>
+        <div class="right-section">
+            <h2>Login</h2>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+            <a href="#" id="signup-link">Need an account? SIGN UP</a>
+
+            <!-- Signup Popup -->
+            <div class="popup" id="signup-popup">
+                <span class="close-popup" id="close-popup">&times;</span>
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button id="next-button">Next</button>
+            </div>
+
+            <!-- Confirm Email Popup -->
+            <div class="popup" id="confirm-email-popup">
+                <span class="close-popup" id="close-confirm-popup">&times;</span>
+                <h2>Confirm your Email</h2>
+                <p>We'll send you a code please check your email</p>
+                <input type="text" placeholder="Enter code">
+                <button>Sign up</button>
+                <a href="#" id="review-details-link">Review Your Details</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
